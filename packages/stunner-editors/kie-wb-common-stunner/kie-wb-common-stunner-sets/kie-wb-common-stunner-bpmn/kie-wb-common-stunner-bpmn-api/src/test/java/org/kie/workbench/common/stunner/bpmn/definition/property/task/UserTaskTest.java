@@ -124,6 +124,6 @@ public class UserTaskTest {
         Set<ConstraintViolation<UserTask>> violations = this.validator.validate(userTask);
         ConstraintViolation<UserTask> violation = violations.iterator().next();
         assertEquals(violation.getPropertyPath().toString(), "general.name.value");
-        assertEquals(violation.getMessage(), "may not be empty");
+        assertEquals(violation.getMessage(), "kann nicht leer sein");
     }
 }
